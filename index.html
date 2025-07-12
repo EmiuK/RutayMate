@@ -53,13 +53,22 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   min-height: 60vh;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--blanco);
+  position: relative;
   text-shadow: 1px 1px 4px #000;
+}
+
+.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.4); /* oscurece el fondo */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .hero h2 {
   font-size: clamp(2rem, 5vw, 3rem);
@@ -140,7 +149,10 @@
     <a href="#contacto">Contacto</a>
   </nav>
   <section class="hero" id="inicio">
+      <div class="overlay">
     <h2>¡El camino es mas lindo cuando se comparte un mate!</h2>
+          </div>
+
   </section>
 
   <section class="seccion" id="productos">
