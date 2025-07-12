@@ -56,13 +56,31 @@
       color: var(--blanco);
       text-shadow: 1px 1px 4px #000;
     }
+.hero h2 {
+  font-size: clamp(1.5rem, 5vw, 3rem);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 1rem 2rem;
+  border-radius: 10px;
 
-    .hero h2 {
-      font-size: 3rem;
-      background-color: rgba(0, 0, 0, 0.4);
-      padding: 1rem 2rem;
-      border-radius: 10px;
-    }
+  text-shadow:
+    0 0 5px #a2e3f5,
+    0 0 10px #a2e3f5,
+    0 0 15px #75c5de,
+    0 0 20px #75c5de;
+}
+
+/* Ajustes adicionales para pantallas chicas */
+@media (max-width: 600px) {
+  .hero h2 {
+    padding: 0.8rem 1rem;
+  }
+
+  nav {
+    gap: 1rem;
+  }
+}
+
+    
 
     .seccion {
       padding: 2rem;
