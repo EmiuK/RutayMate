@@ -269,16 +269,16 @@ Nuestro objetivo es acompañarte en cada momento del día para que disfrutes cad
     <p>&copy; 2025 Ruta y Mate - Todos los derechos reservados.</p>
   </footer>
  <script>
-  document.querySelectorAll('.slider').forEach(slider => {
-    let index = 0;
-    const images = slider.querySelector('.imagenes');
-    const total = slider.querySelectorAll('img').length;
+document.querySelectorAll('.slider').forEach(slider => {
+  let index = 0;
+  const images = slider.querySelector('.imagenes');
+  const total = slider.querySelectorAll('img').length;
 
-    setInterval(() => {
-      index = (index + 1) % total;
-      images.style.transform = `translateX(-${index * 100}%)`;
-    }, 4000); // cada 4 segundos
-  });
+  setInterval(() => {
+    index = (index + 1) % total;
+    images.style.transform = `translateX(-${index * 100}%)`;
+  }, 4000);
+});
 </script>
 </body>
 </html>
