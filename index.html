@@ -134,9 +134,12 @@
 }
 
     .producto img {
-      max-width: 100%;
-      border-radius: 10px;
-    }
+  width: 100%;
+  height: 250px; /* Ajustá esta altura como quieras */
+  object-fit: contain; /* O 'cover' si preferís que rellene recortando */
+  padding: 10px;
+  box-sizing: border-box;
+}
 .slider {
   position: relative;
   overflow: hidden;
