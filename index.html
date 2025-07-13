@@ -187,6 +187,28 @@
       padding: 1rem;
       margin-top: 2rem;
     }
+
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+}
+
+.whatsapp img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp img:hover {
+  transform: scale(1.1);
+}
+
+    
   </style>
 </head>
 <body>
@@ -303,6 +325,12 @@
     </ul>
   </section>
 
+<a href="https://wa.me/5492664730576?text=¡Hola!%20Quisiera%20hacer%20una%20consulta." 
+   class="whatsapp" target="_blank">
+   <img src="https://icones.pro/wp-content/uploads/2021/02/icone-whatsapp-ronde-vert.png" 
+        alt="WhatsApp" />
+</a>
+  
   <footer>
     <p>&copy; 2025 Ruta y Mate - Todos los derechos reservados.</p>
   </footer>
