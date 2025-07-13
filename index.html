@@ -207,15 +207,17 @@
     </div>
       
       <div class="producto">
-          <a href="https://wa.me/5492664730576?text=Hola!%20Estoy%20interesado%20en%20el%20Mate%20Imperial" target="_blank" class="producto">
-        <div class="slider">
+  <a href="https://wa.me/5492664730576?text=Hola!%20Estoy%20interesado%20en%20el%20Mate%20Imperial" target="_blank" class="producto">
+    <div class="slider">
       <div class="imagenes">
-              <img src="https://http2.mlstatic.com/D_NQ_NP_678688-MLA77716816607_072024-O.webp" alt="Mate Imperial 1">
+        <img src="https://http2.mlstatic.com/D_NQ_NP_678688-MLA77716816607_072024-O.webp" alt="Mate Imperial 1">
         <img src="https://dcdn-us.mitiendanube.com/stores/001/635/748/products/mate-imperial-alpaca-f42e2c36eee247eb5f16999965331171-480-0.jpeg" alt="Mate Imperial 2">
-        <h3>Imperial Alpaca Lisa</h3>
-        <p>$24.500</p>
-       </a>
+      </div>
     </div>
+    <h3>Imperial Alpaca Lisa</h3>
+    <p>$24.500</p>
+  </a>
+</div>
       
       <div class="producto">
           <a href="https://wa.me/5492664730576?text=Hola!%20Estoy%20interesado%20en%20el%20Mate%20Algarrobo" target="_blank" class="producto">
@@ -263,16 +265,16 @@ Nuestro objetivo es acompañarte en cada momento del día para que disfrutes cad
   <footer>
     <p>&copy; 2025 Ruta y Mate - Todos los derechos reservados.</p>
   </footer>
-  <script>
+ <script>
   document.querySelectorAll('.slider').forEach(slider => {
     let index = 0;
     const images = slider.querySelector('.imagenes');
     const total = slider.querySelectorAll('img').length;
 
-    slider.addEventListener('click', () => {
+    setInterval(() => {
       index = (index + 1) % total;
       images.style.transform = `translateX(-${index * 100}%)`;
-    });
+    }, 4000); // cada 4 segundos
   });
 </script>
 </body>
